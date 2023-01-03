@@ -7,37 +7,41 @@
 
 
 .background{
-    background-image: url(imagem/Dev_Aggio.png);
+    /* background-image: url(imagem/Dev_Aggio.png); */
+    background-color: rgb(54, 54, 54);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px;
+    padding: 25px 45px 25px 45px;
     padding-left: 8%;
     padding-right: 8%;
 }
 
 .logo{
     color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     cursor: pointer;
     letter-spacing: 1px;
 }
 span{
     color: #8A49AD;
 }
+.sub{
+    text-decoration: underline;
+}
 
 nav ul li{
     list-style-type: none;
     display: inline-block;
     padding: 10px  25px;
+    font-size: 28px;
 }
 
 nav ul li a{
@@ -72,22 +76,17 @@ nav ul li a:hover{
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+    width: 90%;
 }
 
 .Main span{
-    color: black;
+    color: #8A49AD;
 }
 
 h1{
     color: #fff;
     margin: 20px 0px 20px;
     font-size: 75px;
-}
-
-h4{
-    color: #fcfc;
-    letter-spacing: 2px;
-    font-size: 20px;
 }
 
 h3{
