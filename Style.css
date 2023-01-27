@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 
-
 .background{
     /* background-image: url(imagem/Dev_Aggio.png); */
-    background-color: rgb(54, 54, 54);
+
+    background-color: #464646;
+    background-image: linear-gradient(43deg, #464646 0%, #25007b 44%, #8b2b9a 100%);
+    /* background-color: rgb(54, 54, 54);/ */
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -52,8 +54,10 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #8A49AD;
+    transition: 0.8s;
+    /* color: #8A49AD; */
     transform: .4s;
+    border-bottom: 1px solid white;
 }
 
 .btn{
@@ -213,14 +217,16 @@ button:hover{
 }
 
 .Card{
-    background: #191919;
     height: 365px;
     width: 335px;
-    border-radius: 20px;
+    border-radius: 19px;
     margin: 15px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align:  center;
+
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    transition: all .3s;
     
 }
 
@@ -228,14 +234,32 @@ button:hover{
     font-size: 50px;
     display: block;
     text-align: center;
-    margin: 25px 0px;
+    padding-top: 5px;
+    /* margin: 25px 0px; */
     color: #8A49AD;
+}
+
+.card2 {
+    height: 365px;
+    width: 335px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.Card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
 h5{
     color: #fff;
     font-size: 23px;
-    margin-bottom: 15px;
+    margin: 10px 0 15px 0;
 }
 
 .Paragrafo-button{
@@ -243,6 +267,10 @@ h5{
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
+}
+
+.Paragrafo-button button:hover{
+    cursor: pointer;
 }
 
 .Paragrafo-button button{
