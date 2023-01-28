@@ -24,6 +24,7 @@ nav{
     padding: 25px 45px 25px 45px;
     padding-left: 8%;
     padding-right: 8%;
+    background-color: #191919;
 }
 
 .logo{
@@ -81,6 +82,7 @@ nav ul li a:hover{
     left: 8%;
     transform: translateY(-50%);
     width: 90%;
+    height: 3rem;
 }
 
 .Main span{
@@ -139,6 +141,8 @@ h3{
 .background-color-Sobre img{
     width: 430px;
     height: auto;
+    border: 1px white solid;
+    border-radius: 10px;
 }
 
 .Text-sobre{
@@ -219,7 +223,7 @@ button:hover{
 .Card{
     height: 365px;
     width: 335px;
-    border-radius: 19px;
+    border-radius: 23px;
     margin: 15px;
     position: relative;
     /* overflow: hidden; */
