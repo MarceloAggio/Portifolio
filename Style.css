@@ -232,7 +232,7 @@ button:hover {
     text-align: center;
 
     background-color: #56ff00;
-    background-image: linear-gradient(315deg, #56ff00 8%, #8a49ad 21%, #25007b 35%, #7000ff 75%, #56ff00 91%);
+    background-image: linear-gradient(315deg, #56ff00 3%, #8a49ad 21%, #25007b 35%, #7000ff 75%);
 
     transition: all .3s;
 
