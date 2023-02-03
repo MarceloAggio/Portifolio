@@ -6,11 +6,8 @@
 }
 
 .backgrounde {
-    /* background-image: url(imagem/Dev_Aggio.png); */
-
     background-color: #464646;
     background-image: linear-gradient(43deg, #464646 0%, #25007b 44%, #8b2b9a 100%);
-    /* background-color: rgb(54, 54, 54);/ */
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -80,7 +77,7 @@ nav ul li a:hover {
 
 .MaiN {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 8%;
     transform: translateY(-50%);
     width: 90%;
@@ -140,11 +137,12 @@ h3 {
 
 }
 
-.background-color-Sobre img {
+.imagemSobre img {
     width: 430px;
     height: auto;
     border: 1px white solid;
     border-radius: 10px;
+    margin: 0 10px;
 }
 
 .Text-sobre {
@@ -155,7 +153,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1130px;
     margin: 0 auto;
 }
 
@@ -287,7 +284,6 @@ h5 {
 
 .me-contate {
     width: 100%;
-    height: 290px;
     background-color: #191919;
     display: flex;
     flex-direction: column;
@@ -339,7 +335,7 @@ footer p {
     height: 45px;
     padding: 15px;
     border-radius: 50%;
-    margin: 22px 10px;
+    margin: 10px auto;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -391,10 +387,132 @@ footer p {
     border-left: 1px white solid;
 }
 
+.titulo {
+    color: #8A49AD;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.desq {
+    color: #8A49AD;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+.slider-card {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.slider-card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: grey;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.card-button:hover {
+    transition: 0.6s;
+    box-shadow: 0 4px 18px 0 white;
+}
+
+#jemase img {
+    width: 70%;
+    height: 200px;
+    margin-top: 60px;
+}
+
+#portifolio img {
+    width: 70%;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.container .item {
+    cursor: pointer;
+}
+.offMenu{
+    display: none;
+}
+
 @media screen and (max-width: 1191px) {
     nav ul li {
         font-size: 22px;
     }
 }
 
-@media screen and (max-width: 1020px) {}
+@media screen and (max-width: 1118px){
+    
+    .Text-sobre{
+        width: 60%;
+        margin: 0 0 0 16px;
+    }
+    .imagemSobre img{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .imagemSobre img{
+        display: none;
+    }
+    .Text-sobre{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .offMenu{
+        display: block;
+    }
+    
+    .onMenu{
+        display: none;
+    }
+
+    .MaiN{
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .fundo h1{
+        font-size: 62px;
+    }
+    .fundo h3{
+        font-size: 22px;
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 637px){
+    .Text-sobre h2{
+        font-size: 63px;
+    }
+}
+@media screen and (max-width: 534px){
+    .Text-sobre h2{
+        font-size: 57px;
+    }
+}
