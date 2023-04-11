@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,15 +14,6 @@
     width: 100%;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 25px 45px 25px 45px; */
-    /* padding-left: 8%;
-    padding-right: 8%; */
-    background-color: #191919;
-}
 
 .logos {
     color: #fff;
@@ -33,31 +24,6 @@ nav {
 
 span {
     color: #8A49AD;
-}
-
-.sub {
-    text-decoration: underline;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px 20px;
-    font-size: 28px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-nav ul li a:hover {
-    transition: 1.8s;
-    /* color: #8A49AD; */
-    transform: 4.0s;
-    border-bottom: 1px solid white;
 }
 
 .btn {
@@ -77,7 +43,7 @@ nav ul li a:hover {
 
 .MaiN {
     position: absolute;
-    top: 35%;
+    top: 15%;
     left: 8%;
     transform: translateY(-50%);
     width: 90%;
@@ -146,32 +112,27 @@ h3 {
 }
 
 .Text-sobre {
-    width: 550px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .MaiN-sobre {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Text-sobre h2 {
     color: #fff;
     font-size: 75px;
     text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.Text-sobre h5 {
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
+    margin: 20px 0;
 }
 
 .Text-sobre p {
+    text-align: center;
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
@@ -434,36 +395,15 @@ a {
     box-shadow: 0 4px 18px 0 white;
 }
 
-#jemase img {
-    width: 70%;
-    height: 200px;
-    margin-top: 60px;
-}
-
-#portifolio img {
-    width: 70%;
-    height: 400px;
-    border-radius: 100%;
-}
 
 .container .item {
     cursor: pointer;
-}
-.offMenu{
-    display: none;
-}
-
-@media screen and (max-width: 1191px) {
-    nav ul li {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 1118px){
     
     .Text-sobre{
-        width: 60%;
-        margin: 0 0 0 16px;
+        width: 90%;
     }
     .imagemSobre img{
         width: 100%;
@@ -473,26 +413,16 @@ a {
     }
 }
 
-@media screen and (max-width: 850px){
-    .imagemSobre img{
-        display: none;
-    }
-    .Text-sobre{
-        margin: 0 auto;
+@media screen and (max-width: 768px){
+    .MaiN{
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 784px) {
-    .offMenu{
-        display: block;
-    }
-    
-    .onMenu{
-        display: none;
-    }
 
     .MaiN{
-        top: 25%;
+        top: 15%;
     }
 }
 
@@ -510,9 +440,26 @@ a {
     .Text-sobre h2{
         font-size: 63px;
     }
+    .imagemSobre{
+        display: flex;
+        justify-content: center;
+    }
+    .imagemSobre img{
+        width: 80%;
+    }
 }
 @media screen and (max-width: 534px){
     .Text-sobre h2{
         font-size: 57px;
     }
+}
+@media screen and (max-width: 478px){
+
+    .backgrounde{
+        height: 91vh;
+    }
+}
+
+@media screen and (max-width: 466px){
+
 }
