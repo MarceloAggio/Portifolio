@@ -5,29 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="js/owlcarousel/css/owl.carousel.min.css">
+
 
 
     <title>Portfolio - Marcelo N.aggio</title>
     <style>
-    
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* General styles end*/
+        header {
+            background-color: #1a1a1a;
+        }
+
+        .containere {
+            max-width: 98rem;
+            margin-inline: auto;
+            padding-inline: 1.5rem;
+        }
+
+        .navbarr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 1.5rem;
+        }
+
+        .nav-list {
+            position: relative;
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            min-width: 10rem;
+            text-align: center;
+            padding-block: 1rem;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+        }
+
+        .active {
+            position: absolute;
+            bottom: -1rem;
+            height: 2px;
+            width: 10rem;
+            background-color: #fff;
+            transition: transform 0.25s;
+        }
+
+        .nav-item:nth-child(2):hover~.active {
+            transform: translateX(10rem);
+        }
+
+        .nav-item:nth-child(3):hover~.active {
+            transform: translateX(20rem);
+        }
+
+        .nav-item:nth-child(4):hover~.active {
+            transform: translateX(30rem);
+        }
+        .text-center{
+            text-align: center;
+        }
+        .img-logo{
+            width: 20%;
+        }
     </style>
 </head>
 
 <body>
 
-    
+    <header>
+        <nav class="navbarr containere">
+            <a href="index.html" class="nav-link"><img class="img-logo" src="imagem/logo.png" alt=""></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobreMim" class="nav-link">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos" class="nav-link">SERVIÇOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">CONTATO</a>
+                </li>
+                <div class="active"></div>
+            </ul>
+        </nav>
+    </header>
 
     <!---------------------------------------------------------------->
 
@@ -42,12 +145,12 @@
                         class="MaiN-span sub">Curso Tecnico</span> em informatica para internet (Senac Lapa Tito)</h3>
             </div>
         </div>
-        <span id="sobreMim"></span>
     </div>
-
-
+    
+    
     <!--Começo-da-seção-sobre-->
-
+    
+    <span id="sobreMim"></span>
     <section class="background-color-Sobre">
         <div class="MaiN-sobre">
             <div class="imagemSobre">
@@ -58,18 +161,18 @@
                 <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos. E também fazer o website
                     mais Lindos & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele
                     acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                <button type="button">Vamos conversa</button>
+                    <button type="button">Vamos conversa</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <span id="servicos"></span>
-
-    <div class="Container-serviços">
+        </section>
+        <span id="servicos"></span>
         
+        <div class="Container-serviços">
+            
             <h1 class="text-center">Serviços Oferecidos</h1>
-    
-
-        <div class="Caixa">
+            
+            
+            <div class="Caixa">
             <div class="Card">
                 <div class="card2">
                     <i class="fa-solid fa-code"></i>
@@ -184,6 +287,9 @@
         </div><!--Redes-sociais-->
         <p class="end">CopyRight By Marcelo Aggio</p>
     </footer>
+
+
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
