@@ -6,8 +6,8 @@
 }
 
 .backgrounde {
-    background-color: #464646;
-    background-image: linear-gradient(43deg, #464646 0%, #25007b 44%, #8b2b9a 100%);
+    background-color: #772394;
+    background-image: linear-gradient(45deg, #772394 12%, #28017c 67%, #000000 100%);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -23,7 +23,7 @@
 }
 
 span {
-    color: #8A49AD;
+    color: white;
 }
 
 .btn {
@@ -51,7 +51,7 @@ span {
 }
 
 .MaiN span {
-    color: #8A49AD;
+    color: black;
 }
 
 h1 {
@@ -132,6 +132,7 @@ h3 {
 }
 
 .Text-sobre p {
+    width: 85%;
     text-align: center;
     color: #fcfc;
     letter-spacing: 1px;
@@ -189,9 +190,8 @@ button:hover {
     /* overflow: hidden; */
     text-align: center;
 
-    background-color: #56ff00;
-    background-image: linear-gradient(315deg, #56ff00 3%, #8a49ad 21%, #25007b 35%, #7000ff 75%);
-
+    background-color: #00fff9;
+    background-image: linear-gradient(315deg, #00fff9 8%, #772394 22%, #28017c 66%, #b200ff 100%);
     transition: all .3s;
 
 }
@@ -225,7 +225,7 @@ button:hover {
 h5 {
     color: #fff;
     font-size: 23px;
-    margin: 10px 0 15px 0;
+    margin: 20px 0 15px 0;
 }
 
 .Paragrafo-button {
@@ -358,7 +358,7 @@ a {
 }
 
 .desq {
-    color: #8A49AD;
+    color: #000;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -427,6 +427,9 @@ a {
 }
 
 @media screen and (max-width: 645px){
+    .backgrounde{
+        height: 48vh;
+    }
     .fundo h1{
         font-size: 62px;
     }

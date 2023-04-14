@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
 
 
 
     <title>Portfolio - Marcelo N.aggio</title>
     <style>
-    .card2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+        .card2 {
+            padding-top: 25%;
+            display: flex;
+            flex-direction: column;
+        }
 
 
-    *,
+        *,
         *::before,
         *::after {
             margin: 0;
@@ -100,11 +101,22 @@
         .nav-item:nth-child(4):hover~.active {
             transform: translateX(30rem);
         }
-        .text-center{
+
+        .text-center {
             text-align: center;
         }
-        .img-logo{
-            width: 20%;
+
+        .img-logo {
+            width: 50%;
+        }
+
+        .btn-sobre {
+            width: 200px;
+            height: 50px;
+        }
+
+        .me-contate p {
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -146,10 +158,10 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <!--Começo-da-seção-sobre-->
-    
+
     <span id="sobreMim"></span>
     <section class="background-color-Sobre">
         <div class="MaiN-sobre">
@@ -161,18 +173,18 @@
                 <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos. E também fazer o website
                     mais Lindos & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele
                     acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                    <button type="button">Vamos conversa</button>
-                </div>
+                <button type="button" class="btn-sobre">Vamos conversa</button>
             </div>
-        </section>
-        <span id="servicos"></span>
-        
-        <div class="Container-serviços">
-            
-            <h1 class="text-center">Serviços Oferecidos</h1>
-            
-            
-            <div class="Caixa">
+        </div>
+    </section>
+    <span id="servicos"></span>
+
+    <div class="Container-serviços">
+
+        <h1 class="text-center">Serviços Oferecidos</h1>
+
+
+        <div class="Caixa">
             <div class="Card">
                 <div class="card2">
                     <i class="fa-solid fa-code"></i>
@@ -207,7 +219,7 @@
             </div>
         </div>
 
-<!-- 
+        <!-- 
         <h1 class="text-center">Projetos</h1>
 
 
@@ -218,7 +230,7 @@
         </div> -->
 
 
-            <h1 class="text-center">Exemplos de Serviços</h1>
+        <h1 class="text-center">Exemplos de Serviços</h1>
 
 
         <div class="Caixa">
@@ -288,6 +300,28 @@
         <p class="end">CopyRight By Marcelo Aggio</p>
     </footer>
 
+    <script>
+        const menuItens = document.querySelectorAll('.nav-list a[href^="#"]');
+
+        menuItens.forEach(item => {
+            item.addEventListener('click', scrollToIdOnClick);
+        })
+
+
+        function scrollToIdOnClick(event) {
+            event.preventDefault();
+            const element = event.target;
+            const id = element.getAttribute('href');
+            const to = document.querySelector(id).offsetTop;
+
+
+            window.scroll({
+                top: to - 40,
+                behavior: "smooth"
+
+            });
+        }
+    </script>
 
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
