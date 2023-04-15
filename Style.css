@@ -424,6 +424,9 @@ a {
     .MaiN{
         top: 15%;
     }
+    .backgrounde{
+        height: 58vh;
+    }
 }
 
 @media screen and (max-width: 645px){
@@ -459,10 +462,7 @@ a {
 @media screen and (max-width: 478px){
 
     .backgrounde{
-        height: 91vh;
+        height: 51vh;
     }
 }
 
-@media screen and (max-width: 466px){
-
-}
