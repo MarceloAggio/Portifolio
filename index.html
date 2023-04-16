@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="imagem/Dev_Aggio.png" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -200,7 +200,7 @@
 
     <header>
         <nav class="navbarr containere">
-            <a href="index.html" class="nav-link"><img class="img-logo" src="imagem/logo.png" alt=""></a>
+            <a href="index.html" class="nav-link"><img id="meu-logo" class="img-logo" src="imagem/logo.png" alt=""></a>
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -349,8 +349,8 @@
     <!--Contatos-->
     <div class="me-contate">
         <p class="text-center">Entre em Contato, Iremos negociar o melhor serviço e o melhor valor!</p>
-        <a href="c" target="_blank"><button type="button">Enviar
-                mensagem</button></a><!--button-->
+        <button id="open-modal" type="button">Enviar
+                mensagem</button><!--button-->
     </div><!--me-contate-->
     <div class="me-contate contatos">
         <h1 class="titulo">Contatos</h1>
@@ -375,30 +375,49 @@
         <p class="end">CopyRight By Marcelo Aggio</p>
     </footer>
 
-    <script>
-        const menuItens = document.querySelectorAll('.nav-list a[href^="#"]');
-
-        menuItens.forEach(item => {
-            item.addEventListener('click', scrollToIdOnClick);
-        })
-
-
-        function scrollToIdOnClick(event) {
-            event.preventDefault();
-            const element = event.target;
-            const id = element.getAttribute('href');
-            const to = document.querySelector(id).offsetTop;
-
-
-            window.scroll({
-                top: to - 40,
-                behavior: "smooth"
-
-            });
+    <style>
+        input{
+            height: 25px;
+            width: 90%;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #8A49AD;
         }
-    </script>
+        #assunto{
+            border: 2px solid #8A49AD;
+            height: 6rem;
+            width: 90%;
+        }
+    </style>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Envie Um Email</h2>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <div class="modal-body">
+
+        <form action="contato.php" method="post">
+            <label for="email">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome Aqui">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="seuEmail@aqui.com">
+
+            <label for="descrição">Assunto:</label>
+            <textarea name="assunto" id="assunto"></textarea>
+
+            <button></button>
+        </form>
+
+      </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
