@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="imagem/Dev_Aggio.png" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -191,6 +192,9 @@
             .fundo h3{
                 font-size: 17px;
             }
+        }
+        .MaiN-sobre, #servicos, .Caixa , .me-contate{
+            visibility: hidden;
         }
 
     </style>
@@ -413,6 +417,16 @@
 
       </div>
     </div>
+
+    <script>
+        window.sr = ScrollReveal({ reset: true});
+
+        sr.reveal('.MaiN-sobre', {duration: 2400})
+        sr.reveal('#servicos', {duration: 1000})
+        sr.reveal('.Caixa', {duration: 2000})
+        sr.reveal('.me-contate', {duration: 300})
+
+    </script>
 
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
