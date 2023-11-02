@@ -8,234 +8,59 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="imagem/Dev_Aggio.png" type="image/x-icon">
     <script src="https://cdn.userway.org/widget.js" data-account="YpH6Patkrn"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
-
-
-
     <title>Portfolio - Marcelo N.aggio</title>
-    <style>
-        .card2 {
-            padding-top: 25%;
-            display: flex;
-            flex-direction: column;
-        }
-
-
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 62.5%;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.6rem;
-            color: white;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* General styles end*/
-        header {
-            background-color: #1a1a1a;
-        }
-
-        .containere {
-            max-width: 98rem;
-            margin-inline: auto;
-            padding-inline: 1.5rem;
-        }
-
-        .navbarr {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-block: 1.5rem;
-        }
-
-        .nav-list {
-            position: relative;
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-item {
-            min-width: 10rem;
-            text-align: center;
-            padding-block: 1rem;
-        }
-
-        .nav-link {
-            text-transform: uppercase;
-        }
-
-        .active {
-            position: absolute;
-            bottom: -1rem;
-            height: 2px;
-            width: 10rem;
-            background-color: #fff;
-            transition: transform 0.25s;
-        }
-
-        .nav-item:nth-child(2):hover~.active {
-            transform: translateX(10rem);
-        }
-
-        .nav-item:nth-child(3):hover~.active {
-            transform: translateX(20rem);
-        }
-
-        .nav-item:nth-child(4):hover~.active {
-            transform: translateX(30rem);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .img-logo {
-            width: 50%;
-        }
-
-        .btn-sobre {
-            width: 200px;
-            height: 50px;
-        }
-
-        .me-contate p {
-            margin-top: 15px;
-        }
-        @media screen and (max-width: 815px){
-            .serv{
-                font-size: 50px;
-            }
-
-        }
-        @media screen and (max-width: 745px){
-            .text-center{
-                font-size: 55px;
-            }
-        }
-
-        @media screen and (max-width: 730px){
-            .img-logo{
-                width: 150px;
-            }
-        }
-
-        @media screen and (max-width: 700px){
-            .navbarr{
-                display: flex;
-                flex-direction: column;
-            }
-            .img-logo{
-                width: 150px;
-                margin-bottom: 10px;
-            }
-            .nav-link{
-                font-size: 14px;
-            }
-            .backgrounde{
-                height: 48vh;
-            }
-            .MaiN{
-                top: 18%;
-            }
-        }
-        @media screen and (max-width: 675px){
-            .fundo h1{
-                font-size: 61px;
-            }
-        }
-        @media screen and (max-width: 600px){
-            .serv{
-                font-size: 45px;
-            }
-        }
-        @media screen and (max-width: 551px){
-            .servc{
-                font-size: 45px;
-            }
-            .fundo h1{
-                font-size: 56px;
-            }
-        }
-        @media screen and (max-width: 525px){
-            .fundo h1{
-                font-size: 45px;
-            }
-            .fundo h3{
-                font-size: 20px;
-            }
-            .backgrounde{
-                height: 40vh;
-            }
-        }
-        @media screen and (max-width: 477px){
-            .fundo h1{
-                font-size: 40px;
-            }
-            .fundo h3{
-                font-size: 17px;
-            }
-        }
-        .MaiN-sobre, #servicos, .Caixa , .me-contate{
-            visibility: hidden;
-        }
-
-    </style>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbarr containere">
-            <a href="index.html" class="nav-link"><img id="meu-logo" class="img-logo" src="imagem/logo.png" alt=""></a>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobreMim" class="nav-link">SOBRE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#servicos" class="nav-link">SERVIÇOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contato" class="nav-link">CONTATO</a>
-                </li>
-                <div class="active"></div>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand img-logo" href="#">
+                    <img src="imagem/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobreMim">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!---------------------------------------------------------------->
 
-    <div class="backgrounde mt-1">
-
-        <div class="MaiN">
-            <div class="fundo">
-                <h2 class="desq">Olá, meu nome é</h2>
-                <h1>Marcelo N<span>.Aggio</span></h1>
-                <h3>Eu sou um desenvolvedor web (Front-End).</h3>
-                <h3> Sou estudante atualmente <span class="MaiN-span sub">Cursando</span> o 3ºAno Ensino medio e <span
-                        class="MaiN-span sub">Curso Tecnico</span> em informatica para internet (Senac Lapa Tito)</h3>
-            </div>
+    <div class="main-principal">
+        <div class="row">
+            <h1 class="titulo-main">
+                Olá Seja bem vindo
+                <br>
+                Ao meu Portfolio
+            </h1>
         </div>
     </div>
 
@@ -246,14 +71,18 @@
     <section class="background-color-Sobre">
         <div class="MaiN-sobre">
             <div class="imagemSobre">
-                <img src="imagem/marcelo_aggio.png">
+                <img src="imagem/Marcelo do Nascimento Aggio2.jpg">
             </div>
             <div class="Text-sobre">
                 <h2>Sobre-Mim</h2>
-                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos. E também fazer o website
-                    mais formoso & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele
-                    acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                <button type="button" class="btn-sobre"><a target="_blank" href="https://wa.me/5511920003909?text=Ol%C3%A1">Vamos conversa</a></button>
+                <p>
+                    Sou o Marcelo Aggio um estudante de desenvolvimento web, atualmente atuando como full-stack. Possuo
+                    proficiência em
+                    diversas tecnologias, incluindo React, Java, JavaScript, PHP, SQL e React Native. Além disso, tenho
+                    habilidades em design responsivo e prototipação utilizando o software Figma.
+                </p>
+                <a target="_blank" href="https://wa.me/5511920003909?text=Ol%C3%A1"
+                    class="btn-sobre text-uppercase"><button>Vamos conversar</button></a>
             </div>
         </div>
     </section>
@@ -268,11 +97,14 @@
             <div class="Card">
                 <div class="card2">
                     <i class="fa-solid fa-code"></i>
-                    <h5>Front-End</h5>
+                    <h5>Full Stack</h5>
                     <div class="Paragrafo-button">
-                        <p>Desenvolvimento de Sites responsivos e interativos com o usuario. Criamos Sites
-                            Institucionais,
-                            Portifolios web, Sites em Geral</p>
+                        <p>
+                            Desenvolvimento de Sites responsivos e interativos com o usuario. Crio Sites
+                            Institucionais, Portifolios web, Sites em Geral.
+                            <br>
+                            Sistemas Exclusivos usando Java ou PHP e banco de dados SQL
+                        </p>
                     </div>
                 </div>
             </div>
@@ -299,72 +131,101 @@
             </div>
         </div>
 
-        <!-- 
-        <h1 class="text-center">Projetos</h1>
-
-
-        <div class="container">
-            
-
-
-        </div> -->
-
-
-        <h1 class="text-center serv">Mais Sobre</h1>
+        <h1 class="text-center serv">Projetos</h1>
 
 
         <div class="Caixa">
-            <div class="Card">
-                <div class="card2">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h5>Desenvolvedor web</h5>
-                    <div class="Paragrafo-button">
-                        <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar
-                            funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imagem/marcelo_aggio.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <span class="title">
+                            Campos e Aggio
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Site para um escritorio de advocacia totalmente responsivo com efeito paralax
+                    </p>
+
+                    <a class="action" href="https://camposeaggio.netlify.app">
+                        Ver Mais
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
                 </div>
             </div>
 
-            <div class="Card">
-                <div class="card2">
-                    <i class="fa-solid fa-certificate"></i>
-                    <h5>Certificação</h5>
-                    <div class="Paragrafo-button">
-                        <p>Sou Certificado como Programador Front-End pelo Senac-Lapa Tito. Tenho capacidades tecnicas
-                            na
-                            aréa</p>
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imagem/logo_temnaesquina.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <span class="title">
+                            Tem Na Esquina
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Projeto Integrador do Senac feito em equipe com outros 3 membros
+                    </p>
+
+                    <a class="action" href="#">
+                        Ver Mais
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
                 </div>
             </div>
 
-            <div class="Card">
-                <div class="card2">
-                    <i class="fa-solid fa-folder-closed"></i>
-                    <h5>Projetos</h5>
-                    <div class="Paragrafo-button">
-                        <p>Clique no link para ver os links dos meus Projetos</p>
-                        <a href="https://github.com/MarceloAggio" target="_blank"><button type="button">Ver
-                                Mais</button></a>
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imagem/logo.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <span class="title">
+                            Afro Glow
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Plataforma desenvolvida para o DemoDay do PROA fui Gestor do back end e Fullstack na AfroGlow
+                    </p>
+
+                    <a class="action" href="#">
+                        Ver Mais
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Contatos-->
-    <div class="me-contate">
-        <p class="text-center">Entre em Contato, Iremos negociar o melhor serviço e o melhor valor!</p>
-        <button id="open-modal" type="button">Enviar
-                mensagem</button><!--button-->
-    </div><!--me-contate-->
+
+    <span id="contato"></span>
     <div class="me-contate contatos">
         <h1 class="titulo">Contatos</h1>
         <h5>Telefone:</h5>
         <p>(11)92000-3909</p>
         <h5>Email:</h5>
-        <p class="pb-5">marceloaggio10@gmail.com</p>
+        <p class="pb-5 email">marceloaggio10@gmail.com</p>
+        <div class="me-contate">
+            <p class="text-center color-principal">Entre em Contato, Iremos negociar o melhor serviço e o melhor valor!
+            </p>
+            <a target="_blank" class="mb-5" href="https://wa.me/5511920003909?text=Ol%C3%A1">
+                <button type="button">Enviar mensagem</button>
+            </a>
+        </div>
     </div>
-    <span id="contato"></span>
 
     <!--Rodapé--->
     <footer>
@@ -381,14 +242,15 @@
     </footer>
 
     <style>
-        input{
+        input {
             height: 25px;
             width: 90%;
             margin: 10px 0;
             border-radius: 8px;
             border: 2px solid #8A49AD;
         }
-        #assunto{
+
+        #assunto {
             border: 2px solid #8A49AD;
             height: 6rem;
             width: 90%;
@@ -397,37 +259,42 @@
 
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
-      <div class="modal-header">
-        <h2>Envie Um Email</h2>
-        <button id="close-modal">Fechar</button>
-      </div>
-      <div class="modal-body">
+        <div class="modal-header">
+            <h2>Envie Um Email</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
 
-       <form method="post" action="contato.php">
-		<label for="nome">Nome:</label>
-		<input type="text" name="nome" id="nome"><br><br>
+            <form method="post" action="contato.php">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"><br><br>
 
-		<label for="email">E-mail:</label>
-		<input type="email" name="email" id="email"><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email"><br><br>
 
-		<label for="mensagem">Mensagem:</label><br>
-		<textarea name="mensagem" id="mensagem" rows="5" cols="30"></textarea><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" rows="5" cols="30"></textarea><br><br>
 
-		<input type="submit" name="enviar" value="Enviar">
-	</form>
-      </div>
+                <input type="submit" name="enviar" value="Enviar">
+            </form>
+        </div>
     </div>
 
     <script>
-        window.sr = ScrollReveal({ reset: true});
 
-        sr.reveal('.MaiN-sobre', {duration: 2400})
-        sr.reveal('#servicos', {duration: 1000})
-        sr.reveal('.Caixa', {duration: 2000})
-        sr.reveal('.me-contate', {duration: 300})
+        window.sr = ScrollReveal({ reset: true });
+
+        sr.reveal('.MaiN-sobre', { duration: 2400 });
+        sr.reveal('#servicos', { duration: 1000 });
+        sr.reveal('.Caixa', { duration: 2000 });
+        sr.reveal('.me-contate', { duration: 0 });
 
     </script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
     <script src="js/scroll.js"></script>

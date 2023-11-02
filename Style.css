@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Roboto&family=Russo+One&display=swap');
 * {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-
+.row{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("imagem/fundoInicio.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;  
+    margin: 0;
+    
+}
+.titulo-main{
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+.main-principal{
+    width: 100%;
+}
 .backgrounde {
     background-color: #772394;
-    background-image: linear-gradient(45deg, #772394 12%, #28017c 67%, #000000 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imagem/Marcelo\ do\ Nascimento\ Aggio2.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -107,7 +127,6 @@ h3 {
 .imagemSobre img {
     width: 430px;
     height: auto;
-    border: 1px white solid;
     border-radius: 10px;
     margin: 0 10px;
 }
@@ -175,8 +194,10 @@ button:hover {
 }
 
 .Caixa {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-height: 400px;
     flex-wrap: wrap;
@@ -254,7 +275,6 @@ h5 {
 }
 
 .me-contate p {
-    color: #fff;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
@@ -284,17 +304,20 @@ footer p {
     letter-spacing: 1px;
     line-height: 23px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: #666666;
     width: 10px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     width: 10px;
+    border-radius: 10px;
     background-color: #28017c;
 }
+
 .Redes-sociais {
     display: flex;
-
 }
 
 .Redes-sociais a {
@@ -303,7 +326,7 @@ footer p {
     height: 45px;
     padding: 15px;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 10px 10px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -359,6 +382,10 @@ footer p {
     color: #8A49AD;
 }
 
+.color-principal {
+    color: #8A49AD;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -401,10 +428,12 @@ a {
     transition: 0.6s;
     box-shadow: 0 4px 18px 0 white;
 }
+
 .container .item {
     cursor: pointer;
 }
-#close-modal:hover{
+
+#close-modal:hover {
     color: black;
 }
 
@@ -416,9 +445,9 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 5;
-  }
-  
-  #modal {
+}
+
+#modal {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -430,101 +459,300 @@ a {
     border-radius: 0.5rem;
     z-index: 10;
     color: black;
-  }
-  
-  #fade,
-  #modal {
+}
+
+#fade,
+#modal {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-  }
-  
-  .modal-body p {
+}
+
+.modal-body p {
     margin-bottom: 1rem;
-  }
-  
-  #modal.hide,
-  #fade.hide {
+}
+
+#modal.hide,
+#fade.hide {
     opacity: 0;
     pointer-events: none;
-  }
-  
-  #modal.hide {
-    top: 0;
-  }
+}
 
-@media screen and (max-width: 1118px){
-    
-    .Text-sobre{
+#modal.hide {
+    top: 0;
+}
+
+@media screen and (max-width: 1118px) {
+
+    .Text-sobre {
         width: 90%;
     }
-    .imagemSobre img{
-        width: 100%;
+
+    .imagemSobre img {
+        margin: 0 auto;
     }
-    .title h2{
+
+    .title h2 {
         font-size: 64px;
     }
 }
 
-@media screen and (max-width: 768px){
-    .MaiN{
+@media screen and (max-width: 768px) {
+    .MaiN {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 784px) {
 
-    .MaiN{
+    .MaiN {
         top: 15%;
     }
-    .backgrounde{
+
+    .backgrounde {
         height: 58vh;
     }
 }
 
-@media screen and (max-width: 645px){
-    .backgrounde{
+@media screen and (max-width: 645px) {
+    .backgrounde {
         height: 48vh;
     }
-    .fundo h1{
+
+    .fundo h1 {
         font-size: 62px;
     }
-    .fundo h3{
+
+    .fundo h3 {
         font-size: 22px;
         margin-bottom: 23px;
     }
 }
 
-@media screen and (max-width: 637px){
-    .Text-sobre h2{
+@media screen and (max-width: 637px) {
+    .Text-sobre h2 {
         font-size: 63px;
     }
-    .imagemSobre{
+
+    .imagemSobre {
         display: flex;
         justify-content: center;
     }
-    .imagemSobre img{
+
+    .imagemSobre img {
         width: 80%;
     }
 }
-@media screen and (max-width: 534px){
-    .Text-sobre h2{
+
+@media screen and (max-width: 534px) {
+    .Text-sobre h2 {
         font-size: 57px;
     }
 }
-@media screen and (max-width: 478px){
 
-    .backgrounde{
+@media screen and (max-width: 478px) {
+
+    .backgrounde {
         height: 51vh;
     }
 }
 
+.card2 {
+    padding-top: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* General styles end*/
+.navbar {
+    background-color: #1a1a1a !important;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.nav-item .nav-link:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.containere {
+    max-width: 98rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-logo img {
+    width: 50%;
+}
+
+.btn-sobre {
+    width: 200px;
+    height: 50px;
+}
+
+.container-fluid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.me-contate p {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 815px) {
+    .serv {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 745px) {
+    .text-center {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .img-logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbarr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-logo {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .backgrounde {
+        height: 48vh;
+    }
+
+    .MaiN {
+        top: 18%;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .fundo h1 {
+        font-size: 61px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .serv {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .servc {
+        font-size: 45px;
+    }
+
+    .fundo h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .fundo h1 {
+        font-size: 45px;
+    }
+
+    .fundo h3 {
+        font-size: 20px;
+    }
+
+    .backgrounde {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    .fundo h1 {
+        font-size: 40px;
+    }
+
+    .fundo h3 {
+        font-size: 17px;
+    }
+}
+
+.MaiN-sobre,
+#servicos,
+.Caixa,
+.me-contate {
+    visibility: hidden;
+}
+
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+body .uwy.userway_p1 .uai {
+    top: 90% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: calc(100vw - 50px) !important;
+    transform: translate(-100%) !important;
+}
