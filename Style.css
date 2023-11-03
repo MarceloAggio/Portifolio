@@ -275,7 +275,7 @@ h5 {
 }
 
 .me-contate p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -599,6 +599,11 @@ a {
 /* General styles end*/
 .navbar {
     background-color: #1a1a1a !important;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    margin: 0 !important;
+    padding: 10px 0;
 }
 
 .nav-item .nav-link {
@@ -634,8 +639,10 @@ a {
 .container-fluid {
     width: 80%;
     margin: 0 auto;
+    padding: 0;
 }
-
+.container-fluid{
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -659,7 +666,7 @@ a {
 
 @media screen and (max-width: 730px) {
     .img-logo {
-        width: 150px;
+        width: 70%;
     }
 }
 
@@ -670,8 +677,8 @@ a {
     }
 
     .img-logo {
-        width: 150px;
-        margin-bottom: 10px;
+        width: 65%;
+        padding: 10px 0;
     }
 
     .nav-link {
@@ -733,6 +740,12 @@ a {
     }
 }
 
+@media screen and (max-width: 477px) {
+    .me-contate p {
+        font-size: 20px;
+    }
+}
+
 .MaiN-sobre,
 #servicos,
 .Caixa,
@@ -747,6 +760,7 @@ a {
 .navbar-toggler {
     color: #fff !important;
     font-size: 18px;
+    border: none;
 }
 
 body .uwy.userway_p1 .uai {
@@ -755,4 +769,7 @@ body .uwy.userway_p1 .uai {
     bottom: auto !important;
     left: calc(100vw - 50px) !important;
     transform: translate(-100%) !important;
+}
+.navbar{
+    margin: 0 !important;
 }
