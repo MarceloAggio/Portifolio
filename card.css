@@ -1,59 +1,75 @@
 .card {
-    max-width: 350px;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    margin-top: 15px;
-    --bs-card-border-color: none !important;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.content {
-    padding: 1.1rem;
-    height: 150px;
-}
-
-.image img {
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-}
-
-.title {
-    color: #111827;
-    font-size: 1.325rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-}
-
-.desc {
-    margin-top: 0.5rem;
-    color: #6B7280;
-    font-size: 1.3rem;
-    line-height: 1.25rem;
-}
-
-.action {
-    display: inline-flex;
-    margin-top: 1rem;
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    align-items: center;
-    gap: 0.25rem;
+    width: 230px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h4 {
+    z-index: 1;
+    color: white;
+    font-size: 1.2em;
+  }
+  .card a{
+    z-index: 1;
+  }
+  #btn-project{
     background-color: #8A49AD;
-    padding: 8px 16px;
-    border-radius: 4px;
-}
-
-.action span {
-    transition: .3s ease;
-}
-
-.action:hover span {
-    transform: translateX(4px);
-}
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+  }
+  #btn-project:hover{
+    background-color: #8A49AD;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 255, 34), rgb(188, 31, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+  
+  
